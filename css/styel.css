@@ -1,0 +1,276 @@
+:root{
+    --pink: #e83e8c;
+    --red: #dc3545;
+    --main-text-bg:#ccc;
+    --text-color:#777;
+    --hover-color:#d62e33;
+}
+h1,h2,h3,h4,h5
+{
+    font-family: 'Barriecito', cursive;
+
+}
+body
+{
+    overflow: hidden;
+    font-family: 'Bricolage Grotesque', sans-serif;
+
+}
+
+/* nav style */
+nav{
+    background-color: black;
+    width: 20%;
+}
+nav ul{
+    list-style: none;
+    
+}
+nav ul a:hover{
+    color: var(--red);
+}
+nav ul a{
+    text-decoration: none ;
+    margin-inline: 1.25rem;
+    color: #eee;
+    font-weight: bold;
+    font-size: 20px;
+    transition: color .5s;
+}
+ul li i{
+    top: 30px;
+    right: 30px;
+}
+nav .closeNav:hover{
+    color: #dc3545;
+}
+nav .closeNav{
+    cursor: pointer;
+    transition: color .5s;
+}
+
+header{
+    overflow: hidden;
+    height: 100vh;
+    background-position: center center;
+    background-size: cover;
+    background-image: url(../images/3402cc97-96cc-4bdf-9bf2-7cd083ce4c8f.webp);
+}
+header h1{
+    font-size: 70px;
+}
+header .head-content{
+    background-color: red;
+/* opacity:  .6; */
+    width: 100%;
+    height: 100vh;
+}
+
+header .btn-nav{
+    color: #eee;
+    font-size: 2.25rem;
+}
+
+.content .contentBody{
+    background-color: var(--main-text-bg);
+    text-align: center;
+    
+   
+}
+.content .contentHead
+{
+    cursor: pointer;
+    background-color: var(--pink);
+    text-align: center;
+}
+/* ==================================== */
+.timar 
+{
+    
+    background-size: cover;
+    background-position: center center;
+    background-image: url(../images/join\ us.jpeg);
+}
+.timar .contentLiear{
+    
+    width: 18.25rem;
+    height: 10.25rem;
+    border: 2px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.timar .timarLiear
+{
+    padding-block: 8.125rem;
+    color: #eee;
+    font-size: 2.25rem;
+    font-weight: bold;
+    
+   background-color:rgba(214, 46, 51 , 0.6) ;    
+
+}
+/* ==============================last section */
+.joinus h4{
+    font-weight: bold;
+    color: rgb(39, 38, 38);
+}
+.joinus .h1{
+    font-weight: bold;
+}
+.joinus p,span{
+    color: var(--text-color);
+}
+.joinus i{
+    color: var(--hover-color);
+}
+.joinus .links i:hover{
+    color: #eee;
+    background-color: var(--hover-color);
+    border: none;
+}
+.joinus .links i{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: .5px solid black;
+    color: var(--hover-color);
+    padding: 10px 20px;
+    font-size: 1.25rem;
+    transition: all .4s;
+
+}
+
+              
+.numLeater{
+    color: var(--hover-color) !important;
+}
+.btn-input:hover{
+    background-color: var(--hover-color);
+    color: #eee;
+}
+.btn-input:focus{
+    border:solid 1px #e83e8c  !important;
+    
+    
+}
+.btn-input
+{
+    color: #eee;
+    background-color: var(--hover-color);
+}
+
+@media screen and (max-width: 770px) {
+  .timarLiear .container
+  {
+    flex-direction: column;
+    gap: 1.25rem;
+  }
+  header h1{
+    font-size: 30px;
+}
+  }
+  @media screen and (max-width: 1400px) and (min-width: 600px)
+  {
+    .timarLiear .container
+    {
+        gap: 2.25rem;
+
+    }
+    .timarLiear .container .contentLiear{
+        margin-left: 10px;
+    }
+
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+  .lds-spinner {
+    color: official;
+    display: inline-block;
+    position: relative;
+    width: 80px;
+    height: 80px;
+  }
+  .lds-spinner div {
+    transform-origin: 40px 40px;
+    animation: lds-spinner 1.2s linear infinite;
+  }
+  .lds-spinner div:after {
+    content: " ";
+    display: block;
+    position: absolute;
+    top: 3px;
+    left: 37px;
+    width: 6px;
+    height: 18px;
+    border-radius: 20%;
+    background: #fff;
+  }
+  .lds-spinner div:nth-child(1) {
+    transform: rotate(0deg);
+    animation-delay: -1.1s;
+  }
+  .lds-spinner div:nth-child(2) {
+    transform: rotate(30deg);
+    animation-delay: -1s;
+  }
+  .lds-spinner div:nth-child(3) {
+    transform: rotate(60deg);
+    animation-delay: -0.9s;
+  }
+  .lds-spinner div:nth-child(4) {
+    transform: rotate(90deg);
+    animation-delay: -0.8s;
+  }
+  .lds-spinner div:nth-child(5) {
+    transform: rotate(120deg);
+    animation-delay: -0.7s;
+  }
+  .lds-spinner div:nth-child(6) {
+    transform: rotate(150deg);
+    animation-delay: -0.6s;
+  }
+  .lds-spinner div:nth-child(7) {
+    transform: rotate(180deg);
+    animation-delay: -0.5s;
+  }
+  .lds-spinner div:nth-child(8) {
+    transform: rotate(210deg);
+    animation-delay: -0.4s;
+  }
+  .lds-spinner div:nth-child(9) {
+    transform: rotate(240deg);
+    animation-delay: -0.3s;
+  }
+  .lds-spinner div:nth-child(10) {
+    transform: rotate(270deg);
+    animation-delay: -0.2s;
+  }
+  .lds-spinner div:nth-child(11) {
+    transform: rotate(300deg);
+    animation-delay: -0.1s;
+  }
+  .lds-spinner div:nth-child(12) {
+    transform: rotate(330deg);
+    animation-delay: 0s;
+  }
+  @keyframes lds-spinner {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  
